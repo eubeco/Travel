@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+        <ImageView
+            android:id="@+id/idImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ballena" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginTop="75dp">
+            <TextView
+                android:id="@+id/idNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="28dp"
+                android:textColor="@color/colorBlanco"
+                android:layout_toRightOf="@id/idImageView"
+                android:text="Card 1" />
+            <LinearLayout
+                android:id="@+id/BarraBotones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                style="?android:attr/buttonBarStyle">
+                <Button android:id="@+id/BtnAction1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Action1"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorAccent"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <Button android:id="@+id/BtnAction2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Action2"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorAccent"
+                    style="?android:attr/buttonBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
